@@ -13,6 +13,7 @@ import jwtDecode from "jwt-decode";
 import Games from "./Components/Games/Games";
 import GameDetails from "./Components/GameDetail/GameDetails";
 import { Helmet } from "react-helmet";
+import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
   
@@ -98,6 +99,7 @@ function App() {
         },
         { path: "login", element: <Login getUserData={getUserData}  /> },
         { path: "register", element: <Register /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ]);
