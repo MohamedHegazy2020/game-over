@@ -18,7 +18,7 @@ export default function Register() {
   async function addNewUser(values) {
     try {
       let { data } = await axios.post(
-        "https://route-ecommerce.onrender.com/api/v1/auth/signup",
+        "https://ecommerce.routemisr.com/api/v1/auth/signup",
         values
       );
       if (data.message === "success") {
